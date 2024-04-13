@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Announcement</title>
+</head>
+<body>
+    <h1>New Announcement</h1>
+    <ul>
+        <form method='POST'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Post Update</button>
+        </form>
+    </ul>
+</body>
+</html>

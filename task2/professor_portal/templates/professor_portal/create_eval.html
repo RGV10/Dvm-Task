@@ -1,0 +1,17 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eval</title>
+</head>
+<body>
+    <h1>New Eval</h1>
+    <ul>
+        <form method='POST'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Create Eval</button>
+        </form>
+    </ul>
+</body>
+</html>

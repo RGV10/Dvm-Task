@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+</head>
+<body>
+    <h1>Your Courses</h1>
+    <ul>
+        {% for course in registered_courses %}
+            <li><a href={% url 'course-detail' course.id %}>{{ course }}</a>
+        {% endfor %}
+    </ul>
+</body>
+</html>
